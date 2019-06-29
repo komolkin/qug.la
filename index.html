@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Qugla Digital</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="animate fadeInDown queue10s">
+        <h2 class="hello"><a href="https://t.me/qugla_digital" target="_blank">@qugla_digital</a></h2>
+    </header>
+    <section class="about">
+        <h1 class="animate fadeIn queue2s">
+            <div id="body">
+                <div id="text">
+                    <span id="first">Proof-of-</span><span id="second"></span>
+                </div>
+                <div id="hide"></div>
+            </div>
+        </h1>
+    </section>
+    <div class="walker animate fadeInUp queue10s">
+        <a href="http://instagram.com/qugla_digital/" target="_blank"><div class="showme">View projects</div></a>
+        <div class="slider">
+            <div class="slide">
+                <iframe frameborder="0" allowfullscreen="" scrolling="no" src="https://onelineplayer.com/player.html?autoplay=true&loop=true&autopause=false&muted=true&width=848&height=540&url=https%3A%2F%2Fvimeo.com%2F299109014&poster=&time=false&progressBar=false&playButton=false&overlay=true&muteButton=false&fullscreenButton=false&style=light&logo=false&quality=540p"></iframe>
+            </div>
+            <div class="slide">
+                <iframe frameborder="0" allowfullscreen="" src="https://onelineplayer.com/player.html?autoplay=true&loop=true&autopause=false&muted=true&width=864&height=540&url=https%3A%2F%2Fvimeo.com%2F298963368&poster=&time=false&progressBar=false&playButton=false&overlay=true&muteButton=false&fullscreenButton=false&style=light&logo=false&quality=540p"></iframe>
+            </div>
+            <div class="slide">
+                <iframe frameborder="0" allowfullscreen="" src="https://onelineplayer.com/player.html?autoplay=true&loop=true&autopause=false&muted=true&width=864&height=540&url=https%3A%2F%2Fvimeo.com%2F298873745&poster=&time=false&progressBar=false&playButton=false&overlay=true&muteButton=false&fullscreenButton=false&style=light&logo=false&quality=540p"></iframe>
+            </div>
+            <div class="slide">
+                <iframe frameborder="0" allowfullscreen="" scrolling="no" src="https://onelineplayer.com/player.html?autoplay=true&loop=true&autopause=false&muted=true&width=848&height=540&url=https%3A%2F%2Fvimeo.com%2F299109014&poster=&time=false&progressBar=false&playButton=false&overlay=true&muteButton=false&fullscreenButton=false&style=light&logo=false&quality=540p"></iframe>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section class="projects">
+        <h1><div>Projects we've worked on</div></h1>
+    </section> -->
+    <section class="contacts">
+        <h1><div>We are helping blockchain projects at all stages. Let's build something amazing —&nbsp;<a href="https://t.me/qugla_digital" target="_blank">@qugla_digital</a></div></h1>
+        <footer>
+            <div class="footer-info">
+                <div>&copy; Qugla Digital</div>
+                <div>
+                    <span><a href="tel:+79955003336" target="_blank">+7 995 500 3336</a></span>
+                    <span><a href="mailto:hello@qug.la">hello@qug.la</a></span>
+                    <!-- <a href="https://twitter.com/qugla_digital">Twitter</a>
+                    <a href="https://www.instagram.com/qugla_digital/">Instagram</a> -->
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46327631-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46327631-3');
+    </script>
+    <script>
+        var classes = [
+            'Design',
+            'Strategy',
+            'Branding',
+            'Usability',
+            'Marketing',
+            'Technology'
+        ];
+
+        $('#hide').text('Proof-of-'+classes[0]);
+        let width1 = parseInt($('#body').css('width'));
+
+        $('#text').fadeIn(4000);
+
+
+        (function displayClass(i) {
+
+        $('#second').text(classes[i]);
+        let width2 = parseInt($('#hide').css('width'));
+        let a = width1/2 - width2/2;
+
+        $('#text').css('margin-left',a+'px');
+        $('#second').fadeIn(500, function() {
+            $('#hide').text('Proof-of-'+classes[(i + 1) % classes.length]);
+
+            $(this).delay(2000).fadeOut(500, function() {
+                displayClass((i + 1) % classes.length);
+            });
+
+            });
+        })(0);
+    </script>
+    <script src="js/code.js"></script>
+  </body>
+</html>
