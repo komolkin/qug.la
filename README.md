@@ -1,2 +1,1 @@
-"# qug.la" 
 # qug.la
